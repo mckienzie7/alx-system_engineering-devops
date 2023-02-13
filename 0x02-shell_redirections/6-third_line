@@ -1,2 +1,2 @@
 #!/bin/bash
-fmt -n3 iacta
+head -n3 iacta
