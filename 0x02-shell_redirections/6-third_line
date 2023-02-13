@@ -1,2 +1,2 @@
 #!/bin/bash
-find -n3 iacta
+fmt -n3 iacta
