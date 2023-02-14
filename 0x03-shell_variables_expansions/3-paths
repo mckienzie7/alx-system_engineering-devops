@@ -1,2 +1,2 @@
 #!/bin/bash
-echo " find . $PATH | WC -l"
+echo $(('echo $PATH | grep -o ":/" | WC -l' + 1))
