@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #prints 'Best School' 10x but change it in 4 and 8 
 i=0
-while [ $i -le 10 ]
+while [ $i -lt 10 ]
 do
 	if [ $i -eq 4 ]
 	then
