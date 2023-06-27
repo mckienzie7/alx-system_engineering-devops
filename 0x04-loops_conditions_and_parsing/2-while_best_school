@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#While loop that prints 'Best School' 10x
 while
