@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 #While loop that prints 'Best School' 10x
-while
+i=0
+while [ $i -lt 10 ]
+do
+	echo "Best School"
+	((i++)) 
+done
