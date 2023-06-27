@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#prints 'Best School' 10x and prints the 9th item as 'hi'
+i=0
+while [ $i -le 10 ]
+do
+	if [ $i -eq 9 ]
+	then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
