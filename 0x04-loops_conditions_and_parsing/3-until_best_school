@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Until loop Prints "Best School" 10x
 i=0
-until [ $i -gt 10 ]
+until [ $i -ge 10 ]
 do
 	echo "Best School"
 	((i++))
