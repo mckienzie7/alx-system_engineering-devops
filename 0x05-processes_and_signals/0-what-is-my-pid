@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Command to display it's own PID
+
+ps 0-what-is-my-pid
