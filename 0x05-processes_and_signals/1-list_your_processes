@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Display a list of currently running processes with different requirment.
 
-ps -a 1-list_your_processes
+ps -auxf
