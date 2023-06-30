@@ -8,5 +8,5 @@ while [ $1 -lt 1 ]
 do
 	echo "To infinity and beyond indefinitely"
 	sleep 2
-	trap "I am invincible!!!"
+	trap 'echo "I am invincible!!!"' SIGTERM
 done
