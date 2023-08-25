@@ -1,6 +1,6 @@
-# install Flask from PIP3
+# Installs Flask
 
-exec { 'flask':
-  command => 'pip3 install flask',
-  cwd => 'pip3',
+package { 'flask':
+  ensure   => '2.1.1',
+  provider => 'pip3',
 } 
