@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#Connect to the Alx server
 
-cat ~/.ssh/school.pub | ssh ubuntu@54.146.71.210 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+ssh -i ~/.ssh/school ubuntu@52.3.254.117
