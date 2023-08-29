@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Transfer file from Client to the Server
+
+scp ~/some_page.html ubuntu@54.146.77.164:~
