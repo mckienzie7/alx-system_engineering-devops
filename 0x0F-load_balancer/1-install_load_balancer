@@ -13,8 +13,8 @@ frontend haproxynode
 
 backend backendnodes
     balance roundrobin
-    server 190348-web-02 54.242.159.226:80 check
-    server 190348-web-01 3.84.222.31:80 check
+    server 278963-web-02 34.234.193.138:80 check
+    server 278963-web-01 54.90.54.163:80 check
 
 EOF
 sudo service haproxy restart
