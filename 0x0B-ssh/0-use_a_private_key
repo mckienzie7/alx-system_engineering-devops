@@ -1,1 +1,2 @@
-cat ~/.ssh/school.pub | ssh ubuntu@18.209.152.73 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+#connect to the server using ssh
+ssh -i  ~/.ssh/school.pub ubuntu@18.209.152.73
