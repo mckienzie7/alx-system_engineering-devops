@@ -1,2 +1,3 @@
+#!/usr/bin/env bash
 #connect to the server using ssh
 ssh -i  ~/.ssh/school.pub ubuntu@18.209.152.73
