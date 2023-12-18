@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Installs and setup haproxy
+=======
+#installing load balancer HAProxy
+#!/usr/bin/env bash
+#install and configure HAproxy on your lb-01 
+sudo -i
+>>>>>>> bcc3e1e48b2538866b63a619dad4935d245da861
 sudo apt-get -y update
 sudo apt-get install -y haproxy
 sudo echo "ENABLED=1" >> /etc/default/haproxy
