@@ -46,7 +46,7 @@ frontend www-http
     redirect scheme https if !{ ssl_fc }
 
 frontend www-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.flozzykamau.tech/fullchain.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.michaelsolomon.tech/fullchain.pem
     mode http
     option forwardfor
     reqadd X-Forwarded-Proto:\ https
