@@ -1,3 +1,27 @@
-i#!/usr/bin/env bash
-# who am i command
-sudo -u "$1" 'whoami'
+#!/usr/bin/env bash
+# A Bash script that accepts one argument
+# The script runs the whoami command under the user passed as an argument
+
+new_user="syslog"
+sudo useradd -ms /bin/bash "$new_user"
+
+if [ "$#" -ne 1 ]; then
+    echo "Error: Invalid number of arguments. Please provide only one username."
+    exit 1
+fi
+
+username=$1
+
+# Check if the user exists
+if ! id -u "$username" >/dev/null 2>&1; then
+    echo "Error: User '$username' does not exist."
+    exit 1
+fi
+
+# Run the whoami command as the specified user
+if sudo -u "$username" whoami >/dev/null 2>&1; then
+    sudo -u "$username" whoami
+else
+    echo "Error: Unable to run the whoami command as user '$username'."
+    exit 1
+fi
