@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Gracefully reload
+pgrep -f "gunicorn" | xargs -I {} kill -HUP {} 2>/dev/null || true

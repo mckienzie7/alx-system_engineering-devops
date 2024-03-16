@@ -1,0 +1,31 @@
+server {
+    listen 80;
+    server_name 3.85.136.157;
+
+    add_header  X-Served-By 278963-web-01;
+    location /airbnb-onepage/ {
+        proxy_pass http://0.0.0.0:5000;
+    }
+  
+    location ~ airbnb-dynamic/number_odd_or_even/(\d+)$ {
+        proxy_pass http://0.0.0.0:5001/number_odd_or_even/$1;
+    }
+
+    location /api/ {
+        proxy_pass http://0.0.0.0:5002;
+    }
+
+    location / {
+        proxy_pass http://0.0.0.0:5003/2-hbnb;
+    }
+
+    location /static/ {
+        alias /home/ubuntu/AirBnB_clone_v4/web_dynamic/static/;
+    }
+
+    location /static/scripts/2-hbnb.js {
+        # Reconfigure this file with the correct IP
+        add_header Access-Control-Allow-Origin *;
+        alias /home/ubuntu/AirBnB_clone_v4/web_dynamic/static/scripts/2-hbnb.js;
+    }
+}
